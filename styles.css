@@ -70,7 +70,7 @@ header {
 }
 
 footer {
-    background-color: rgba(150,150,150,0.8);
+    background-color: var(--header-bg);
     padding: 1rem;
 }
 
@@ -145,6 +145,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: var(--link-color);
+    text-shadow: 2px 2px 2px #222;
 }
 
 /*html, body {
