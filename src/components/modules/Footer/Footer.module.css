@@ -1,0 +1,11 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--header-bg);
+  height: var(--footer-height);
+  line-height: var(--footer-height);
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
