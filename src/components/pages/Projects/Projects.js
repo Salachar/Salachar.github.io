@@ -6,6 +6,8 @@ import Spacer from '../../modules/Spacer';
 import Anchor from '../../modules/Anchor';
 import Section from '../../modules/Section/Section';
 
+import PieChart from '../../modules/PieChart/PieChart';
+
 function Projects() {
   return (
     <Fragment>
@@ -26,6 +28,12 @@ function Projects() {
         More info here: <Link to="/gmkit">GM Kit</Link>
       </Section>
 
+      <Section header="Reddit Viewer">
+        A simple (and in-progress) reddit view-only front end.
+        <Spacer />
+        View it here: <Anchor link="https://salachar.github.io/reddit-viewer/">Reddit Viewer</Anchor>
+      </Section>
+
       <Section header="Gravity Well Demo">
         Interesting little gravity well demo I made a long time ago when first tinkering with the HTML Canvas.
         <ul>
@@ -43,6 +51,30 @@ function Projects() {
         that prevents it from being a real "minesweeper" game, but it's close enough.
         <Spacer />
         View it here: <Anchor link="https://salachar.github.io/minesweeper/">Minesweeper</Anchor>
+      </Section>
+
+      <Section header="Pie Chart">
+        A simple pie chart component I made that can show things in a plain list or a pie chart if the data is numerical.
+        <Spacer />
+        In plain text view:
+        <Spacer />
+        <PieChart data={{
+          'Zero': 5,
+          'One': 10,
+          'Two': 40,
+          'Three': 20,
+          'Four': 30,
+        }} />
+        <Spacer />
+        In pie chart view:
+        <Spacer />
+        <PieChart pieChart={true} data={{
+          'Zero': 5,
+          'One': 10,
+          'Two': 40,
+          'Three': 20,
+          'Four': 30,
+        }} />
       </Section>
     </Fragment>
   );

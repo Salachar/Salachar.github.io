@@ -18,6 +18,7 @@ function Header() {
 
   return (
     <div className={styles.header}>
+      <Link to="/" className={styles.landing}>{String.fromCharCode(10151)}</Link>
       <div className={styles.navigation}>
         {Object.keys(links).map((link) => {
           const path = links[link];
