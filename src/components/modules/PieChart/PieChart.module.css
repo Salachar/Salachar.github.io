@@ -58,6 +58,7 @@
 }
 .details > table > tbody > tr > td {
   padding: 0.5rem;
+  white-space: nowrap;
 }
 .details > table > tbody > tr > td:first-child {
   font-weight: bold;

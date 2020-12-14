@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 import styles from './Landing.module.css';
@@ -295,13 +295,11 @@ class Landing extends Component {
 
   render() {
     return (
-      <Fragment>
-        <Link to="/about">
-          <div className={styles.info}>
-            <div className={styles.name}>Ray Davidson</div>
-            <div className={styles.title}>Software Developer</div>
-            <div className={styles.disclaimer}>...and his obligatory canvas landing page</div>
-          </div>
+      <div className={styles.wrapper}>
+        <Link to="/about" className={styles.info}>
+          <div className={styles.name}>Ray Davidson</div>
+          <div className={styles.title}>Software Developer</div>
+          <div className={styles.disclaimer}>...and his obligatory canvas landing page</div>
         </Link>
         <canvas
           ref={this.canvasRef}
@@ -311,7 +309,7 @@ class Landing extends Component {
           onMouseMove={this.onCanvasMouseMove}
           onMouseLeave={this.onCanvasMouseLeave}
         />
-      </Fragment>
+      </div>
     );
   }
 }

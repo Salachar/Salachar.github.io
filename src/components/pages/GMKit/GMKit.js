@@ -6,23 +6,37 @@ import Anchor from '../../modules/Anchor';
 import List from '../../modules/List';
 import Section from '../../modules/Section/Section';
 
+import MAP_1 from './images/map/map1-min.png';
+import MAP_2 from './images/map/map2-min.png';
+import MAP_3 from './images/map/map3-min.png';
+import MAP_4 from './images/map/map4-min.png';
+import MAP_SELECT_1 from './images/map/mapselect1-min.png';
+import MAP_SELECT_2 from './images/map/mapselect2-min.png';
+import MAP_SPELL_1 from './images/map/spell1-min.png';
+import MAP_SPELL_2 from './images/map/spell2-min.png';
+
+import AUDIO_1 from './images/audio/audio1-min.png';
+import AUDIO_2 from './images/audio/audio2-min.png';
+
+import INFO_1 from './images/info/info1-min.png';
+
 const IMAGES = {
   MAP: [
-      'https://i.lensdump.com/i/isRecv.md.png',
-      'https://i.lensdump.com/i/isRvgC.md.png',
-      'https://i.lensdump.com/i/isto45.md.png',
-      'https://i.lensdump.com/i/istYtC.md.png',
-      'https://i.lensdump.com/i/is1px3.md.png',
-      'https://i.lensdump.com/i/is1KSF.md.png',
-      'https://i.lensdump.com/i/istzMi.md.png',
-      'https://i.lensdump.com/i/istn69.md.png',
+    MAP_1,
+    MAP_2,
+    MAP_3,
+    MAP_4,
+    MAP_SELECT_1,
+    MAP_SELECT_2,
+    MAP_SPELL_1,
+    MAP_SPELL_2,
   ],
   AUDIO: [
-      'https://i.lensdump.com/i/isHtHx.md.png',
-      'https://i.lensdump.com/i/istvz2.md.png',
+    AUDIO_1,
+    AUDIO_2,
   ],
   INFO: [
-      'https://i.lensdump.com/i/istSao.md.png',
+    INFO_1,
   ],
 };
 
@@ -106,12 +120,6 @@ class GMKit extends Component {
 
         <Section header="Info: Random Name and Quest Generators" images={IMAGES.INFO}>
           Several small generators to help come up with names and places on the spot. Names are split between races and gender and any number can be generated at a time. Clicking on a result will mark it to remain in the list during the current app session.
-          <Spacer />
-          The names mainly came from:
-          <List items={[
-            'Player Handbook 5e',
-            '<a href="http://brandondraga.tumblr.com/post/66804468075/chris-perkins-npc-name-list" rel="noreferrer" target="_blank">Chris Perkins Name List</a>',
-          ]} />
         </Section>
       </Fragment>
     );
