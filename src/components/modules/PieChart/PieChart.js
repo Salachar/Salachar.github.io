@@ -303,8 +303,8 @@ class TableList extends Component {
                   </td>
                 )}
                 <td>{dataKey}</td>
-                {pieChart && <td>{`${data[dataKey]} (${parseInt(this.percentages[dataKey] * 100)}%)`}</td>}
                 {!pieChart && <td>{data[dataKey]}</td>}
+                {pieChart && <td>{`${data[dataKey]} (${parseInt(this.percentages[dataKey] * 100)}%)`}</td>}
               </tr>
             ))}
           </tbody>

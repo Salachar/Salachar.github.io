@@ -299,7 +299,7 @@ class Landing extends Component {
         <Link to="/about" className={styles.info}>
           <div className={styles.name}>Ray Davidson</div>
           <div className={styles.title}>Software Developer</div>
-          <div className={styles.disclaimer}>...and his obligatory canvas landing page</div>
+          <div className={styles.disclaimer}>...and his canvas landing page demo</div>
         </Link>
         <canvas
           ref={this.canvasRef}

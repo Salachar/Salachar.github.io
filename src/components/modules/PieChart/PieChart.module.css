@@ -33,6 +33,7 @@
   line-height: 1rem;
   text-align: center;
   font-weight: bold;
+  padding-top: 0.5rem;
 }
 .pie_chart_legend_td {
   width: 1px
