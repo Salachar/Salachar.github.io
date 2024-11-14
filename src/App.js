@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Landing from './components/pages/Landing';
 import About from './components/pages/About';
@@ -9,20 +9,12 @@ import Projects from './components/pages/Projects';
 function App() {
   return (
     <HashRouter basename="/">
-      <Switch>
-        <Route exact path="/">
-          <Landing />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/gmkit">
-          <GMKit />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="gmkit" element={<GMKit />} />
+      </Routes>
     </HashRouter>
   );
 }
