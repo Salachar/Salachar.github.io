@@ -97,13 +97,6 @@ class GMKit extends Component {
             'Spell/Shape Markers can be placed (line/square/circle/cone) to mark spells and see what grid squares are affected. Spell Markers are not saved to the map and will go away between closing and opening the app. This currently requires the use of the overlay grid, as the spells use the grid to determine a 5\' square for sizing.',
           ]} />
           <Spacer />
-          Good sources for maps:
-          <ul>
-            {Object.keys(MAP_REFERENCES).map((key) => {
-              const link = MAP_REFERENCES[key];
-              return <li key={`link_${link}`}><Anchor link={link}>{key}</Anchor></li>;
-            })}
-          </ul>
         </Section>
 
         <Section header="Audio: Local Track Management and Player" images={IMAGES.AUDIO}>

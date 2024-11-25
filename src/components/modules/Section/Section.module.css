@@ -9,6 +9,9 @@
   margin: 0 auto;
   padding: var(--section-padding);
 }
+.section:last-child {
+  padding-bottom: 9rem;
+}
 
 .header {
   position: relative;

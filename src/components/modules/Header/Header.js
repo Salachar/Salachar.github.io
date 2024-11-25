@@ -4,7 +4,7 @@ import classnames from "classnames";
 
 import styles from './Header.module.css';
 
-const RESUME_LINK = "https://docs.google.com/document/d/1aTujwNc_y6BLQmkewbEnFPGCXxLqKoo3BUKjNjLdmNo/edit?usp=sharing";
+const RESUME_LINK = "https://docs.google.com/document/d/1aTujwNc_y6BLQmkewbEnFPGCXxLqKoo3BUKjNjLdmNo";
 
 function Header() {
   const location = useLocation();

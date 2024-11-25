@@ -35,14 +35,21 @@ function Projects() {
           <li>Asteroids are created at the mouse position with an initial direction/velocity matching the movement of the mouse.</li>
         </ul>
         <Spacer />
-        View it here: <Anchor link="https://salachar.github.io/gravity-well/">Gravity Well</Anchor>
+        View it here: <Anchor link="https://raydav.com/gravity-well/">Gravity Well</Anchor>
       </Section>
 
       <Section header="Minesweeper">
         A simple minesweeper game made from scratch as part of a quick challenge with friends. Currently it's just set to super easy because watching the spaces clear is satifying. I'm sure something is missing
         that prevents it from being a real "minesweeper" game, but it's close enough.
         <Spacer />
-        View it here: <Anchor link="https://salachar.github.io/minesweeper/">Minesweeper</Anchor>
+        View it here: <Anchor link="https://raydav.com/minesweeper/">Minesweeper</Anchor>
+      </Section>
+
+      <Section header="Plex Poster Widget">
+        A simple project I put together to help me make consistent media posters. Could easily be done in Photoshop (or
+        similar image software), but I like making little web widgets like this.
+        <Spacer />
+        View it here: <Anchor link="https://raydav.com/poster-widget/">Poster Widget</Anchor>
       </Section>
     </Fragment>
   );
