@@ -17,7 +17,7 @@
     "build": "react-scripts build"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "gh-pages": "*"
   },
   "browserslist": {
     "production": [
